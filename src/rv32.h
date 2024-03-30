@@ -118,16 +118,16 @@ public:
 	static void exec_OR(rv32 *, uint32_t insn);
 	static void exec_AND(rv32 *, uint32_t insn);
 
-	//void printInsn(uint32_t insn);
+	void printInsn(uint32_t insn);
 
 private:
 	static const char *regNames[2][32];
 	static const insn insns[];
 
 
-	//void printInsnArgs(const insn *pi, uint32_t insn);
+	void printInsnArgs(const insn *pi, uint32_t insn);
 	int execInsn(int32_t insn);
-	//void execInsn2(const insn *pi, uint32_t insn);
+	void execInsn2(const insn *pi, uint32_t insn);
 
 	int32_t		reg[32];
 	uint32_t	pc;
